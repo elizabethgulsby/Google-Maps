@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Maps (Reborn)</title>
+
+	<style type="text/css" media="screen">
+
+		#map {
+			height: 100vh;
+			width:  50%;
+			float:  left;
+		}
+
+		#cities-container {
+			width:  25%;
+			float:  left;
+		}
+
+		th, td {
+			border: 1px solid black;
+			text-align: center;
+			width: 25%;
+		}
+
+		.city-name {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		#directionsPanel {
+			float: right;
+			width:  25%;
+			height:  100%;
+		}
+
+	</style>
+	<!-- Both versions of Bootstrap, 3.3.7 and Bootstrap-React -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+
+</head>
+<body>
+
+	<div id="map"></div>
+	<div id="cities-container">Cities app is loading...</div>
+	<div id="directionsPanel"></div>
+
+	<!-- Include jQuery, React, ReactDOM and babel -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://fb.me/react-15.1.0.js"></script>
+	<script src="https://fb.me/react-dom-15.1.0.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy4A4dRLjgSAk-L2NSyPuBaFs6GItAEzg&libraries=places"></script>
+	<script type="text/javascript" src="cities.js"></script>
+	<script type="text/babel" src="maps.jsx"></script>
+
+</body>
+</html>

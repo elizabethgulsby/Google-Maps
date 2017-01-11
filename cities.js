@@ -62,3 +62,4 @@ cities.push(new City ("39","Atlanta","Georgia","456,002","420,003","+8.57%","133
 
 
 // console.log(cities);
+
